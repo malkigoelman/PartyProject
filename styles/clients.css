@@ -1,0 +1,153 @@
+#for_h1 {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 100px;
+    text-align: center;
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+
+h1::before {
+    content: '';
+    position: absolute;
+    height: 47%;
+    width: 13.4%;
+    background-color: var(--purple);
+    border-radius: 20% 20% 20% 0;
+    z-index: inherit;
+    top: 34%;
+    left: -4.3%;
+}
+
+h1::after {
+    content: '...';
+    position: absolute;
+    font-weight: 800;
+    font-size: 36%;
+    color: white;
+    top: 32%;
+    left: 0;
+}
+
+.conteiner {
+    width: 1180px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.client_box {
+    display: flex;
+    flex-direction: column;
+    border: 0.25px solid black;
+    box-shadow: rgb(110 110 110 / 10%) 0px 0px 7px 7px;
+    width: 47%;
+    min-height: 150px;
+    margin: 10px auto;
+}
+
+.client_box div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 0.25px solid black;
+}
+
+.client_box img {
+    border: 0.25px solid black;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-size: auto;
+    margin: 5px;
+}
+
+.client_name {
+    margin-right: 10px;
+}
+
+.client_box p {
+    margin: 5px auto;
+    width: 95%;
+    text-align: start;
+}
+
+.image_galery {
+    display: flex;
+    background-color: #ea6ba5;
+    padding: 5px;
+}
+
+.image_galery .col {
+    display: flex;
+    flex-direction: column;
+}
+
+.image_galery img {
+    width: 100%;
+    overflow: hidden;
+    border: 2px solid #ea6ba5;
+}
+
+.image_galery a {
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    padding: 2% 7%;
+    box-sizing: border-box;
+    color: #ea6ba5;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.image_galery a:hover {
+    transition: all 0.5s;
+    color: #fff;
+    background-color: #ea6ba5;
+    border: 1px solid #fff;
+}
+
+@media (max-width: 1200px) {
+    .conteiner {
+        width: 965px;
+    }
+}
+
+@media (max-width: 992px) {
+    .conteiner {
+        width: 767px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 78px;
+    }
+
+    .conteiner {
+        width: 565px;
+    }
+
+    .client_box {
+        width: 75%;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .conteiner {
+        width: 100%;
+    }
+
+    .client_box {
+        width: 100%;
+    }
+}

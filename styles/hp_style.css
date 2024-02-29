@@ -1,0 +1,96 @@
+.main {
+    margin: 0 auto;
+}
+
+#adverticment_home_page {
+    height: 720px;
+    width: 100%;
+    overflow: hidden;
+    animation: cahnge_background 60s infinite;
+    margin: 0 auto 5px auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@keyframes cahnge_background {
+    0% {
+        background-image: url(../images/same_size/1.webp);
+    }
+
+    7% {
+        background-image: url(../images/same_size/2.webp);
+    }
+
+    14% {
+        background-image: url(../images/same_size/3.webp);
+    }
+
+    21% {
+        background-image: url(../images/same_size/4.webp);
+    }
+
+    28% {
+        background-image: url(../images/same_size/5.webp);
+    }
+
+    75% {
+        background-image: url(../images/same_size/6.webp);
+    }
+
+    42% {
+        background-image: url(../images/same_size/7.webp);
+    }
+
+    49% {
+        background-image: url(../images/same_size/8.webp);
+    }
+
+    56% {
+        background-image: url(../images/same_size/9.webp);
+    }
+
+    70% {
+        background-image: url(../images/same_size/10.webp);
+    }
+
+    77% {
+        background-image: url(../images/same_size/11.webp);
+    }
+
+    84% {
+        background-image: url(../images/same_size/12.webp);
+    }
+
+    91% {
+        background-image: url(../images/same_size/13.webp);
+    }
+
+    100% {
+        background-image: url(../images/same_size/1.webp);
+    }
+
+
+}
+
+.title_for_prod {
+    text-align: center;
+    display: block;
+    background-image: linear-gradient(90deg, var(--pink), var(--green), var(--blue));
+    padding: 12px 0;
+    font-size: 40px;
+}
+.title_for_prod:hover{
+    text-decoration: underline;
+}
+
+#squers_of_images {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#squers_of_images img {
+    width: 32%;
+}
+
+

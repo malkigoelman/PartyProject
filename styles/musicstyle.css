@@ -1,0 +1,154 @@
+.main {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.music {
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+h2 {
+    font-weight: bolder;
+}
+
+.line_music:nth-child(odd) {
+    background-color: #ba9bd6;
+}
+
+.line_music:nth-child(even) {
+    background-color: #e6aec7;
+}
+
+.line_music:hover:nth-child(even) {
+    background-color: #ec78ac;
+}
+
+.line_music:hover:nth-child(odd) {
+    background-color: #ab60ed;
+}
+
+.line_music,
+.line_music div:first-child {
+    margin: 0.2%;
+    color: black;
+    width: 100%;
+    height: 25px;
+    font-weight: normal;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+}
+
+.line_music input {
+    width: 5%;
+    height: 60%;
+    border: 1px black solid;
+    color: #ec78ac;
+    top: 0;
+}
+
+.line_music .space {
+    width: 10%;
+}
+
+.line_music span {
+    font-weight: bold;
+}
+
+.line_music a {
+    text-align: end;
+    top: 0;
+    display: flex;
+}
+
+.line_music a img {
+    width: 20px;
+    height: fit-content;
+    left: 0;
+}
+
+.img_from_event img {
+    height: 100%;
+    transition: all 0.5s;
+}
+
+.error {
+    width: 100%;
+    height: fit-content;
+    background: #ba9bd6;
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    padding: 10px 0;
+    margin: 10px auto;
+    animation: 1s popular1 infinite;
+}
+@keyframes popular1 {
+    10% {
+       background-color: #551a8b;
+    }
+
+    30% {
+        background-color: #8cbe22;
+    }
+
+    50% {
+        background-color: #e30613;
+    }
+
+    70% {
+        background-color: #ea6ba5;
+    }
+
+    100% {
+        background-color: #ffed00;
+    }
+}
+@media (max-width: 992px) {
+    .img_from_event {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column-reverse;
+    }
+
+    .products {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .products a {
+        margin: 2% 2.5%;
+    }
+
+    .music {
+        width: 90%;
+    }
+
+    .error {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .products {
+        display: none;
+    }
+    .error{
+        font-size: 24px;
+    }
+}

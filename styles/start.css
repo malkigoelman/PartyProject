@@ -1,0 +1,22 @@
+body {
+    width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+#logo {
+    width: 400px;
+    height: auto;
+}
+
+#loading {
+    display: inline;
+    margin: 4px 20px -16px 20px;
+    height: 50px;
+}
+
+div {
+    display: inline;
+    font: normal normal bold 34px/1.2 Calibri;
+    color: #4b6fb5;
+}
